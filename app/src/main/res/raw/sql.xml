@@ -18,6 +18,9 @@
             "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
             "rusak_id" INTEGER NOT NULL,
             "ciri_id" INTEGER NOT NULL,
+			"gejala" text NOT NULL,
+			"pencegahan" text NOT NULL,
+			"solusi" text NOT NULL,
             "creation_date" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
         )
     </statement>
@@ -134,70 +137,70 @@
     </statement>
 	
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("1","LCD")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("1","LCD", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("2","Kabel Flexi")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("2","Kabel Flexi", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("3","MB")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("3","MB", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("4","Memori")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("4","Memori", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("5","IC Power")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("5","IC Power", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("6","IC TS")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("6","IC TS", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("7","IC BB")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("7","IC BB", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("8","IC EMMC")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("8","IC EMMC", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("9","BL")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("9","BL", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("10","LS")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("10","LS", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("11","MIC")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("11","MIC", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("12","USB")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("12","USB", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("13","Keyboard")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("13","Keyboard", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("14","Tracpad")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("14","Tracpad", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("15","BTN Power/Volume")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("15","BTN Power/Volume", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("16","Battery")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("16","Battery", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("17","Kamera")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("17","Kamera", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("18","Flash")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("18","Flash", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("19","Slot")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("19","Slot", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("20","Slot MNC")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("20","Slot MNC", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("21","SW")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("21","SW", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
-        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("22","EMEI")
+        INSERT INTO pakar_rusak ("_id", "rusak", "gejala", "pencegahan", "solusi") VALUES ("22","EMEI", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.")
     </statement>
     <statement>
         INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("1","1","1")
