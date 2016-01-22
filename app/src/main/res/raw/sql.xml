@@ -10,6 +10,9 @@
         CREATE TABLE pakar_rusak (
             "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
             "rusak" VARCHAR NOT NULL,
+			"gejala" text NOT NULL,
+			"pencegahan" text NOT NULL,
+			"solusi" text NOT NULL,
             "creation_date" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
         )
     </statement>
@@ -18,9 +21,6 @@
             "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
             "rusak_id" INTEGER NOT NULL,
             "ciri_id" INTEGER NOT NULL,
-			"gejala" text NOT NULL,
-			"pencegahan" text NOT NULL,
-			"solusi" text NOT NULL,
             "creation_date" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
         )
     </statement>

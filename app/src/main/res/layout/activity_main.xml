@@ -22,6 +22,8 @@
         android:layout_above="@+id/boxCompare"
         android:divider="#cccccc"
         android:dividerHeight="1dp"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/item_ciri_background"
         android:drawSelectorOnTop="false" />
 
     <LinearLayout

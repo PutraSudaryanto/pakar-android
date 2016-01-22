@@ -67,25 +67,6 @@ public class ResultActivity extends Activity implements View.OnClickListener {
                         .putExtra("solusi", array.get(position).solusi));
             }
         });
-
-        lvResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                /*
-                if (arrayCiriId.contains(array.get(position).id + "")) {
-                    arrayCiriId.remove(array.get(position).id + "");
-                    arrayCiri.remove(array.get(position).ciri + "");
-                } else {
-                    arrayCiriId.add(array.get(position).id + "");
-                    arrayCiri.add(array.get(position).ciri + "");
-                }
-                */
-                //Toast.makeText(getApplicationContext(), "Position " + position, Toast.LENGTH_SHORT).show();
-                //Log.i("Ciri ID", arrayCiriId.toString());
-                //Log.i("Ciri", arrayCiri.toString());
-            }
-        });
-
     }
 
     private void getListData() {
