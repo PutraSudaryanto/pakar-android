@@ -6,8 +6,6 @@ import co.ommu.phonebroke.R;
 import co.ommu.phonebroke.models.CiriModel;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,15 +17,22 @@ public class CiriAdapter extends BaseAdapter {
 
     LayoutInflater inflater;
     ArrayList<CiriModel> array;
+    /*
     Boolean arrayStatus[] = null;
+    String arrayColor[] = null;
+    */
 
     public CiriAdapter(ArrayList<CiriModel> array, Context context) {
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.array = array;
+        /*
         arrayStatus = new Boolean[array.size()];
+        arrayColor = new Boolean[array.size()];
         for (int i=0; i<array.size(); i++){
             arrayStatus[i] = false;
+            arrayColor[i]="#ffffff";
         }
+        */
     }
 
     @Override
@@ -52,7 +57,7 @@ public class CiriAdapter extends BaseAdapter {
     public View getView(final int position, View view, ViewGroup arg2) {
         // TODO Auto-generated method stub
         View vi = view;
-       final Holder holder;
+        final Holder holder;
         if (vi == null) {
             holder = new Holder();
             vi = inflater.inflate(R.layout.item_ciri, null);
@@ -66,26 +71,32 @@ public class CiriAdapter extends BaseAdapter {
         holder.tvCiri.setText(array.get(position).ciri);
         //Log.i("ciri", array.get(position).ciri);
 
+        /*
         holder.linCiri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i("tes id", array.get(position).id);
                 if(arrayStatus[position]) {
                     arrayStatus[position] = false;
-                    holder.linCiri.setBackgroundColor(Color.parseColor("#ffffff"));
+                    arrayColor[position] = "#ffffff";
+                    holder.linCiri.setBackgroundColor(Color.parseColor(arrayColor[position]));
                 } else {
+                    arrayColor[position] = "#00ff00";
                     arrayStatus[position] = true;
-                    holder.linCiri.setBackgroundColor(Color.parseColor("#00ff00"));
+                    holder.linCiri.setBackgroundColor(Color.parseColor(arrayColor[position]));
                 }
 
             }
         });
+        */
 
-        //if ((position % 2) == 0) {
-        //    holder.linCiri.setBackgroundColor(Color.parseColor("#f8f8f8"));
-        //} else {
-        //    holder.linCiri.setBackgroundColor(Color.parseColor("#ffffff"));
-        //}
+        /*
+        if ((position % 2) == 0) {
+            holder.linCiri.setBackgroundColor(Color.parseColor("#f8f8f8"));
+        } else {
+            holder.linCiri.setBackgroundColor(Color.parseColor(arrayColor[position]));
+        }
+        */
 
         return vi;
     }

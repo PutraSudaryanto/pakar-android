@@ -1,23 +1,28 @@
 package co.ommu.phonebroke;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import co.ommu.phonebroke.adapter.CiriAdapter;
 import co.ommu.phonebroke.models.CiriModel;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     public ArrayList<CiriModel> array = new ArrayList<CiriModel>();
     protected SQLiteDatabase db;
     protected Cursor cursor;
     protected CiriAdapter adapter;
     ListView lvCiri;
+    Button btnCompare;
     ArrayList<String> arrayId = new ArrayList<>();
 
     @Override
@@ -25,6 +30,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         db = (new DatabaseHelper(this)).getWritableDatabase();
+
+        btnCompare = (Button) findViewById(R.id.buttonCompare);
+        btnCompare.setOnClickListener(this);
 
         //MyStateSaver data = (MyStateSaver) getLastNonConfigurationInstance();
         //if (data != null) {
@@ -80,4 +88,26 @@ public class MainActivity extends Activity {
         }
         buildWidget();
     }
+
+
+    @Override
+    public void onClick(View arg0) {
+        int id = arg0.getId();
+
+        if (id == R.id.buttonCompare) {
+            // TODO Auto-generated method stub
+            /*
+            Intent intent = new Intent(getBaseContext(), ResultActivity.class);
+            keyword = fieldSearch.getText().toString();
+            if (keyword != null && keyword.length() > 0) {
+                intent.putExtra("url", searching[selected] + "/" + keyword);
+                intent.putExtra("keyword", keyword);
+                startActivity(intent);
+                fieldSearch.getText().clear();
+            } else
+                Toast.makeText(getBaseContext(), "Pencarian tidak boleh kosong", Toast.LENGTH_SHORT).show();
+            */
+        }
+    }
+
 }
