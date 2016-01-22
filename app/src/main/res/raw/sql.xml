@@ -1,0 +1,326 @@
+<sql>
+    <statement>
+        CREATE TABLE IF NOT EXISTS pakar_ciri (
+            "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            "ciri" VARCHAR NOT NULL,
+            "creation_date" TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    </statement>
+    <statement>
+        CREATE TABLE pakar_rusak (
+            "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            "rusak" VARCHAR NOT NULL,
+            "creation_date" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+        )
+    </statement>
+    <statement>
+        CREATE TABLE pakar_ciri_data (
+            "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            "rusak_id" INTEGER NOT NULL,
+            "ciri_id" INTEGER NOT NULL,
+            "creation_date" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+        )
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("1","bintik dead pixel")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("2","garis")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("3","warna mati satu")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("4","pecah/retak")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("5","lcd mati")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("6","tidak bisa difungsikan")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("7","dicharge tidak nyala")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("8","tidak bisa booting")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("9","mati")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("10","tidak bisa dicharge")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("11","touch screen tidak responsif")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("12","tidak ada sinyal")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("13","hanya muncul logo")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("14","tidak ada suara")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("15","suara tidak jelas")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("16","Suara tidak responsif")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("17","suara tidak masuk")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("18","tidak bisa didetect")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("19","tidak bisa connect ke port lain")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("20","keyboard tidak berfungsi")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("21","ada huruf yang tidak responsif")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("22","trackpad mati")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("23","trackpad terlalu sensitif")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("24","trackpad tidak responsif")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("25","button tidak berfungsi")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("26","button terlalu sensitif")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("27","baterai melembung")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("28","power cepat habis")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("29","tidak bisa dicharge penuh")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("30","kamera mati")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("31","blur")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("32","auto focus mati")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("33","flash mati")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("34","tidak bisa membaca sim")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("35","tidak bisa membaca memory")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("36","aplikasi banyak yg crash")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri ("_id", "ciri") VALUES ("37","sering force closed/restart")
+    </statement>
+	
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("1","LCD")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("2","Kabel Flexi")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("3","MB")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("4","Memori")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("5","IC Power")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("6","IC TS")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("7","IC BB")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("8","IC EMMC")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("9","BL")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("10","LS")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("11","MIC")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("12","USB")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("13","Keyboard")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("14","Tracpad")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("15","BTN Power/Volume")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("16","Battery")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("17","Kamera")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("18","Flash")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("19","Slot")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("20","Slot MNC")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("21","SW")
+    </statement>
+    <statement>
+        INSERT INTO pakar_rusak ("_id", "rusak") VALUES ("22","EMEI")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("1","1","1")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("2","1","2")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("3","1","3")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("4","1","4")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("5","2","5")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("6","2","6")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("7","3","7")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("8","16","7")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("9","4","8")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("10","5","9")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("11","8","9")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("12","5","10")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("13","8","10")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("14","6","11")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("15","7","12")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("16","22","12")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("17","9","13")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("18","10","14")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("19","10","15")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("20","11","16")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("21","11","17")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("22","12","18")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("23","12","19")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("24","13","20")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("25","13","21")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("26","14","22")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("27","14","23")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("28","14","24")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("29","15","25")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("30","15","26")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("31","16","27")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("32","16","28")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("33","16","29")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("34","17","30")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("35","17","31")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("36","17","32")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("37","18","33")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("38","19","34")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("39","20","35")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("40","21","36")
+    </statement>
+    <statement>
+        INSERT INTO pakar_ciri_data ("_id", "rusak_id", "ciri_id") VALUES ("41","21","37")
+    </statement>
+
+</sql>
